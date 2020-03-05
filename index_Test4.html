@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+html{  font-family: "Open Sans";  font-size:16px;}
+  .rt-image-upload {    width: 400px;}
+  .rt-image-upload__controls {    display: flex;min-height: 135px;}
+  .rt-image-upload__actions {    width: 46%;    padding: 2%;}
+  .rt-image-container{  position: relative;  border: 2px dotted rgba(0, 0, 0, 0.12);  width:50%}
+  .rt-image-container img {    width: 100%;}
+  .rt-image-input {    width: 100%;    position: absolute;    top: 0;    bottom: 0;    right: 0;    left: 0;    opacity: 0;}
+  .rt-image-upload__controls.--has-image .rt-image-container{  pointer-events: none;border: 2px solid transparent;}
+  .rt-image-upload__controls .rt-image-container:hover {    border-color: blue;    background-color: rgba(0, 0, 255, 0.15);}
+  .rt-image-upload__controls img, .rt-image-upload__controls .delete{display: none;}
+  .rt-image-upload__controls.--has-image img, .rt-image-upload__controls.--has-image .delete{display: block;}
+  .buttons {    display: flex;    margin-top: 10px;}
+  .buttons button {    background: none;    border: 0;    font-size: 16px;}
+  button.attach{color: blue;}
+  button.delete{color: red;}
+  .buttons .delete:hover{    background-color:rgb(243, 175, 175); }
+  .buttons .attach:hover{    background-color:rgb(140, 140, 245); }
+    </style>
+</head>
+<body>
+    <p>Add the class <b>--has-image</b> to rt-image-upload-controls in order to switch between the empty and attached image states.</p>
+
+<p>The component should be able to switch between display modes through modifying or adding classes on <b>"rt-image-upload"</b> only</p> 
+
+<div class="rt-image-upload">
+    <div class="rt-image-upload__controls   ">
+        <div class="rt-image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Rubber_Duck_%288374802487%29.jpg/220px-Rubber_Duck_%288374802487%29.jpg">
+            <input id="1" class="rt-image-input" type="file" />
+        </div>
+      <div class="rt-image-upload__actions ">   
+        <label for="1" class="rt-image-input__label">filename.xyz</label>
+        <span class="buttons">
+          <button class="attach"><label for="1">REPLACE</label></button>
+          <button class="delete">REMOVE</button>
+        </span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
