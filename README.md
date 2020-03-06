@@ -1,3 +1,11 @@
+Installation needs:
+https://sass-lang.com/install
+1. Install the nodejs. Then on command prompt run,
+npm install -g sass
+2. Use the following command for converting scss into css file.
+sass style.scss style.css
+
+************************************************************************************************************************************
 https://codepen.io/Shearwater/pen/RwwYWyN?editors=1100
 
 We have a pre-built image upload component which we need to modify in order to use in a different part of our UI. We want to achieve this so that the component can be switched between its two possible display modes by modifying the class(es) on the "rt-image-upload" div. The original state should continue to work.
