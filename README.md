@@ -1,8 +1,11 @@
 Installation needs:
 https://sass-lang.com/install
-1. Install the nodejs. Then on command prompt run,
+1. Install the nodejs. Then on command prompt run:
+
 npm install -g sass
-2. Use the following command for converting scss into css file.
+
+2. Use the following command for converting scss into css file:
+
 sass style.scss style.css
 
 ************************************************************************************************************************************
