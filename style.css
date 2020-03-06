@@ -1,0 +1,85 @@
+html {
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+.rt-image-upload {
+  width: 700px;
+}
+
+.rt-image-upload__controls {
+  display: flex;
+  min-height: 135px;
+}
+
+.rt-image-upload__actions {
+  width: 46%;
+  padding: 2%;
+}
+
+.rt-image-container {
+  position: relative;
+  border: 2px dotted rgba(0, 0, 0, 0.12);
+  width: 50%;
+}
+
+.rt-image-container img {
+  width: 100%;
+}
+
+.rt-image-input {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rt-image-upload__controls.--has-image .rt-image-container {
+  pointer-events: none;
+  border: 2px solid transparent;
+}
+
+.rt-image-upload__controls .rt-image-container:hover {
+  border-color: blue;
+  background-color: rgba(0, 0, 255, 0.15);
+}
+
+.rt-image-upload__controls img, .rt-image-upload__controls .delete {
+  display: none;
+}
+
+.rt-image-upload__controls.--has-image img, .rt-image-upload__controls.--has-image .delete {
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.buttons button {
+  background: none;
+  border: 0;
+  font-size: 16px;
+}
+
+button.attach {
+  color: blue;
+}
+
+button.delete {
+  color: red;
+}
+
+.buttons .delete:hover {
+  background-color: #f3afaf;
+}
+
+.buttons .attach:hover {
+  background-color: #8c8cf5;
+}
+
+/*# sourceMappingURL=style.css.map */

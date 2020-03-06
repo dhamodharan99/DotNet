@@ -1,0 +1,19 @@
+@import "variables";
+
+html{  @include page-display }
+  .rt-image-upload {    @include image-width }
+  .rt-image-upload__controls {    @include image-display}
+  .rt-image-upload__actions {    @include action-display}
+  .rt-image-container{  @include image-container }
+  .rt-image-container img {   @include image-containerwidth }
+  .rt-image-input {   @include input-display}
+  .rt-image-upload__controls.--has-image .rt-image-container{  @include controls-hasimg-display }
+  .rt-image-upload__controls .rt-image-container:hover {  @include controls-hover-display }
+  .rt-image-upload__controls img, .rt-image-upload__controls .delete{ @include hidedisplay}
+  .rt-image-upload__controls.--has-image img, .rt-image-upload__controls.--has-image .delete{ @include showdisplay}
+  .buttons {    @include btncss-display }
+  .buttons button {  @include btn-display }
+  button.attach{ @include clr-blue }
+  button.delete{  @include clr-red }
+  .buttons .delete:hover{  @include hover-red }
+  .buttons .attach:hover{  @include hover-blue }

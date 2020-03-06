@@ -1,0 +1,40 @@
+$imgwidth:700px;
+$imgminheight:135px;
+$fullflex:flex;
+$actionwidth:46%;
+$actionpadding: 2%;
+$imgcontainerposition: relative;
+$imgcontainerborder: 2px dotted rgba(0, 0, 0, 0.12);
+$imgcontainerwidth: 50%;
+$fullwidth:100%;
+$zeropx:0;
+$absposition:absolute;
+$noneval:none;
+$makeblock: block;
+$twopxsolidtrans:2px solid transparent;
+$clrblue: blue;
+$clrred:red;
+$bgclrblue:rgba(0, 0, 255, 0.15);
+$hoverred:rgb(243, 175, 175); 
+$hoverblue:rgb(140, 140, 245);
+$tenpx:10px;
+$sixteenpx: 16px;
+$sansfont: "Open Sans";
+
+@mixin page-display { font-family: $sansfont;  font-size:$sixteenpx; }
+@mixin image-width {  width: $imgwidth;  }
+@mixin image-display {  display: $fullflex;  min-height: $imgminheight; }
+@mixin action-display { width: $actionwidth;    padding: $actionpadding; }
+@mixin image-container { position: $imgcontainerposition;  border: $imgcontainerborder;  width:$imgcontainerwidth} 
+@mixin image-containerwidth {  width: $fullwidth;  } 
+@mixin input-display {  width: $fullwidth;    position:$absposition;    top: $zeropx;    bottom: $zeropx;    right: $zeropx;    left: $zeropx;    opacity: $zeropx; } 
+@mixin controls-hasimg-display{ pointer-events: $noneval;border: $twopxsolidtrans; }
+@mixin controls-hover-display{  border-color: $clrblue;    background-color: $bgclrblue; }
+@mixin hidedisplay { display: $noneval; }  
+@mixin showdisplay { display: $makeblock; }   
+@mixin btncss-display { display: $fullflex;    margin-top: $tenpx; }   
+@mixin btn-display { background: $noneval;    border: $zeropx;    font-size:  $sixteenpx; }   
+@mixin clr-blue { color: $clrblue; }
+@mixin clr-red { color: $clrred; }
+@mixin hover-red { background-color:$hoverred; }
+@mixin hover-blue { background-color:$hoverblue; }
